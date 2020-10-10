@@ -49,6 +49,74 @@ export const GlobalStyle = createGlobalStyle<IThemeInterface>`
     &:active {
     }
   }
+  
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 500px;
+    overflow: hidden;
+    transition: 0.1s ease;
+  }
+  
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+  .slick-slide div {
+    height: 100%;
+  }
+  
+  .ant-carousel {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .ant-anchor-wrapper {
+    height: 100%;
+  }
+  
+  .ant-anchor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  
+  .ant-anchor-link {
+    transition: 0.2s ease;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ant-anchor-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: 0.2s ease;
+  }
+  
+  .ant-anchor div:hover {
+    background-color: #ffeaa7;
+  }
+  
+  .ant-anchor-link :hover {
+    color: black;
+  }
+  
+  .layout {
+    background-color: transparent;
+  }
+  
+  .ant-layout-content {
+    background-color: transparent;
+  }
+  
 
   /* animations */
   @keyframes spin {
